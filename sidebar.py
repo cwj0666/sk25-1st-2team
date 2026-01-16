@@ -78,7 +78,7 @@ def render_sidebar():
     pages = {
         "전기차 등록 현황": "menu_infrastructure",
         "충전소 현황": "menu_heatmap_new",
-        "충전소 요금": "menu_keywords",
+        "충전소 요금": "menu_fee",
         "충전소 혼잡도" : "menu_honjab",
         "FAQ" : "menu_FAQ"
     }

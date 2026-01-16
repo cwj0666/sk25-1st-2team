@@ -1,7 +1,7 @@
 import streamlit as st
 from sidebar import render_sidebar
 from mainpages.map_page import render_map_page
-from mainpages.keyword_page import render_keyword_page
+from mainpages.charge_fee import render_charge_fee_page
 from mainpages.infra_page import render_infra_page
 from mainpages.faq_page import render_faq_page
 from mainpages.congestion_page import load_and_preprocess
@@ -29,10 +29,10 @@ class App:
         page = st.session_state.current_page
         if page == "충전소 현황":
             render_map_page(self.conn)
-        elif page == "충전소 요금":
-            render_keyword_page(self.conn)
         elif page == "전기차 등록 현황":
             render_infra_page(self.conn)
+        elif page == "충전소 요금":
+            render_charge_fee_page(self.conn)
         elif page == "FAQ":
             render_faq_page(self.conn)
         elif page == "충전소 혼잡도":
