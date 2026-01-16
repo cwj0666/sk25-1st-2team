@@ -67,7 +67,7 @@ def render_faq_page(conn): # 기존에 conn 인자를 받으므로 유지
 
     try:
         df = get_cached_faq_data(target_table)
-        search_term = st.text_input("🔍 질문 제목 키워드 검색", "", key="faq_search_input")
+        search_term = st.text_input("🔍키워드 검색", "", key="faq_search_input")
         eng_search_term = TRANSLATION_MAP.get(search_term, None)
 
         if search_term and not df.empty:
