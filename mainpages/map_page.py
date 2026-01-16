@@ -23,8 +23,9 @@ install_and_import("folium")
 # --- 설정 ---
 # 스크립트의 위치를 기준으로 상대 경로 설정
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-FILE1_PATH = os.path.join(SCRIPT_DIR, '한국전력공사_충전소의 위치 및 현황 정보_20250630.csv')
-FILE2_PATH = os.path.join(SCRIPT_DIR, '한국환경공단_전기차 충전소 위치 및 운영정보_20221027.csv')
+DATA_DIR = os.path.join(SCRIPT_DIR, '..', 'data')
+FILE1_PATH = os.path.join(DATA_DIR, '한국전력공사_충전소의 위치 및 현황 정보_20250630.csv')
+FILE2_PATH = os.path.join(DATA_DIR, '한국환경공단_전기차 충전소 위치 및 운영정보_20221027.csv')
 
 # 열 이름 매핑
 F1_LAT_COL = '위도'
