@@ -22,7 +22,7 @@ SKN AI Camp 25기 1차 단위프로젝트 2팀의 결과물입니다.
 | 팀원 | 최원준 | 전체 Data URL 검색, 전기차 등록 현황 및 충전소 혼잡도 Data Web 구현 |
 
 ## 3. 프로젝트 기간
-2026.01.13(월) ~ 2026.01.19(월)
+2026.01.16(금) ~ 2026.01.19(월)
 
 ## 4. 기술 스택
 - **Language:** `Python`
@@ -98,5 +98,5 @@ SKN AI Camp 25기 1차 단위프로젝트 2팀의 결과물입니다.
   - 출처: [무공해차 통합누리집](https://chargeinfo.ksga.org/front/statistics/fee)
 - **기업별 FAQ** (담당: 이근혁, 권가영)
   - Tesla: https://www.tesla.com/ko_KR/support
-  - BYD: 
+  - BYD: https://www.reverautomotive.com/en/faq
   - KIA: https://www.kia.com/kr/customer-service/center/faq
