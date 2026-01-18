@@ -1,21 +1,100 @@
-# 1. 팀 소개
+# 수요자 맞춤형 전기차 통합 정보 플랫폼
 
-# 2. 프로젝트 기간
+## 1. 프로젝트 소개
+SKN AI Camp 25기 1차 단위프로젝트 2팀의 결과물입니다.
 
-# 3. 프로젝트 개요
+본 프로젝트는 전기차 사용자들에게 필요한 다양한 정보를 통합하여 제공하는 Streamlit 기반 웹 애플리케이션입니다. 전국 전기차 충전소의 위치, 요금, 혼잡도 등 실용적인 정보부터 전기차 관련 FAQ까지 한 곳에서 확인할 수 있도록 하여 사용자의 편의성을 높이는 것을 목표로 합니다.
 
-## 📕 프로젝트명
+### 주요 기능
+- ** 전국 충전소 현황:** 지도 기반의 전국 전기차 충전소 위치 시각화
+- ** 전기차 인프라 현황:** 국내 전기차 등록 현황 및 관련 인프라 통계 제공
+- ** 충전소별 요금 정보:** 충전소 운영사별 요금 비교 분석
+- ** 충전소 혼잡도:** 충전소 혼잡도 데이터를 제공하여 효율적인 충전소 선택 지원
+- ** FAQ:** 전기차와 관련된 자주 묻는 질문과 답변 모음
 
-## ✅ 프로젝트 배경 및 목적
+## 2. 팀 소개
+| 직책 | 이름 | 역할 |
+|:---:|:---:|:---:|
+| 팀장 | 김홍익 | 전기차 등록 현황 및 추세 Data 전처리, GitHub Repository 관리 |
+| 팀원 | 권가영 | BYD 전기차 FAQ Data 크롤링, 충전소 현황 Web 구현 |
+| 팀원 | 이근혁 | KIA, TESLA 전기차 FAQ Data 크롤링 및 Web 구현 |
+| 팀원 | 전운열 | 충전소 회사 별 요금 Data 크롤링 및 Web 구현, 발표 |
+| 팀원 | 최원준 | 전체 Data URL 검색, 전기차 등록 현황 및 충전소 혼잡도 Data Web 구현 |
 
-## 🖐️ 프로젝트 소개
+## 3. 프로젝트 기간
+2026.01.13(월) ~ 2026.01.19(월)
 
-## ❤️ 기대효과
+## 4. 기술 스택
+- **Language:** `Python`
+- **Framework:** `Streamlit`
+- **Libraries:** `Pandas`, `Folium`, `Streamlit-Folium`
 
-## 👤 대상 사용자
+## 5. 실행 방법
+1. **필요한 라이브러리를 설치합니다.**
+   ```bash
+   pip install -r requirements.txt 
+   # requirements.txt 파일이 없는 경우: pip install streamlit pandas folium streamlit-folium
+   ```
 
-# 4. 기술 스택
+2. **Streamlit 애플리케이션을 실행합니다.**
+   ```bash
+   streamlit run main.py
+   ```
 
-# 5. 수행결과
+## 6. 프로젝트 구조
+```
+c:\python\sk25-1st-2team\
+├───app.py                  # 메인 애플리케이션 클래스 및 페이지 라우팅
+├───main.py                 # 애플리케이션 실행 진입점
+├───README.md               # 프로젝트 설명 문서
+├───sidebar.py              # 사이드바 UI 구성
+├───data\                   # 충전소 위치 관련 Data file (CSV)
+│   ├───한국전력공사_충전소의 위치 및 현황 정보_20250630.csv
+│   └───한국환경공단_전기차 충전소 위치 및 운영정보_20221027.csv
+├───mainpages\              # 각 페이지를 구성하는 모듈
+│   ├───charge_fee.py       # 충전소 요금
+│   ├───congestion_page.py  # 충전소 혼잡도
+│   ├───faq_page.py         # 차량 및 정책 FAQ
+│   ├───infra_page.py       # 전기차 등록 현황
+│   └───map_page.py         # 충전소 현황
+└───utils\
+    └───db.py               # 데이터베이스 연결 유틸리티
+```
 
-# 6. 한 줄 회고
+### 전기차 등록 현황
+
+### 충전소 현황
+
+### 충전소 요금
+- **평균 충전요금 가장 저렴한 곳 TOP 10**
+<img width="1565" height="550" alt="image" src="https://github.com/user-attachments/assets/ebd2c8d8-c53d-4483-a134-add753249c4c" />
+충전소 Brand 별로 평균 충전요금을 정렬하였을 때, 요금이 가장 저렴한 업체 10곳의 가격 정보를 막대 그래프 형태로 구현하였습니다.
+회원가/비회원가로 구분하여 평균 충전요금을 확인할 수 있습니다.
+- **업체별 평균 충전요금 목록**
+<img width="1548" height="567" alt="image" src="https://github.com/user-attachments/assets/48b7cfba-a02d-489b-8b8a-c0960d7334e3" />
+전체 충전소 Brand의 업체명/전화번호/회원가/비회원가를 정리한 표입니다.
+특정 keyword를 이용하여 업체 정보를 검색하거나, 비회원가/회원가/업체명 순서를 이용하여 정보를 재정렬할 수 있습니다.
+
+### 충전소 혼잡도
+
+### FAQ
+
+
+## 7. 데이터 출처
+
+### Public Data
+- **전기차 등록 현황 및 추세** (담당: 김홍익)
+  - URL: [https://www.data.go.kr/data/15142951/fileData.do](https://www.data.go.kr/data/15142951/fileData.do)
+- **충전소 위치 정보** (담당: 권가영)
+  - 위치: [https://www.data.go.kr/data/15039545/fileData.do](https://www.data.go.kr/data/15039545/fileData.do)
+  - 급속/완속 구분: [https://www.data.go.kr/data/15119741/fileData.do](https://www.data.go.kr/data/15119741/fileData.do)
+- **충전소 이용 부하 시간대 안내** (담당: 최원준)
+  - URL: [https://www.data.go.kr/data/15039553/fileData.do#tab-layer-file](https://www.data.go.kr/data/15039553/fileData.do#tab-layer-file)
+
+### Web Crawling
+- **전기차 충전 요금 정보** (담당: 전운열)
+  - 출처: [무공해차 통합누리집](https://chargeinfo.ksga.org/front/statistics/fee)
+- **기업별 FAQ** (담당: 이근혁, 권가영)
+  - Tesla: 
+  - BYD: 
+  - KIA: 
