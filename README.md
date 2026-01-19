@@ -71,7 +71,15 @@ SKN AI Camp 25기 1차 단위프로젝트 2팀의 결과물입니다.
 ### 전기차 등록 현황
 
 <img width="1675" height="837" alt="image" src="https://github.com/user-attachments/assets/1d8342f2-7114-4307-8aee-cad6c022630d" />
+
+전국 전기차 등록 현황 데이터를 시각적으로 확인할 수 있는 페이지입니다.
+지역별 분포, 차종별 구성, 용도별 현황을 한눈에 파악할 수 있도록 구성하였습니다.
+
 <img width="1656" height="806" alt="image" src="https://github.com/user-attachments/assets/82845760-9604-4a3f-9753-22871977c3e7" />
+
+승용·승합·화물·특수 차량으로 구분하여 차종별 구성 비율을 원형 차트로 표현하였습니다.
+사업용 / 비사업용 전기차 등록 현황을 막대 그래프로 제공하여 활용 목적에 따른 분포를 분석할 수 있습니다.
+
 
 
 
