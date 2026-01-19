@@ -151,18 +151,27 @@ SKN AI Camp 25기 1차 단위프로젝트 2팀의 결과물입니다.
 <br>
 
 ### 6-5. 전기차 보조금 정보
-<img width="1569" height="700" alt="스크린샷 2026-01-19 105819" src="https://github.com/user-attachments/assets/86d6f7d2-9def-4d76-ad01-18c809660292" />
 전국 지자체별 전기차 구매 보조금 현황을 조회할 수 있는 페이지입니다.  
 시도 및 시군구 단위로 구분된 데이터를 제공하여 지역별 보조금 차이를 직관적으로 비교할 수 있도록 구성하였습니다.
 
 #### 주요 기능
+<img width="1569" height="700" alt="스크린샷 2026-01-19 105819" src="https://github.com/user-attachments/assets/86d6f7d2-9def-4d76-ad01-18c809660292" />
 - 지역 검색  
   시·군·구명을 기준으로 원하는 지역의 보조금 정보를 조회할 수 있습니다.
+<br>
+
+<img width="1582" height="410" alt="image" src="https://github.com/user-attachments/assets/21a11ade-7658-45cf-9c06-5b4be1dbb2be" />
 - 차종별 보조금 정보 제공  
   승용차 및 초소형 전기차에 대해 지역별 보조금 금액을 표 형태로 제공합니다.
+<br>
+
+<img width="1550" height="567" alt="image" src="https://github.com/user-attachments/assets/fe157fe7-21cc-4ff2-b4c7-4781a2d5abfb" />
 - 지역 간 비교 용이성  
   동일 시도 내 여러 지자체의 보조금 정보를 한 화면에서 비교할 수 있도록 구성했습니다.
-- 자주 묻는 질문
+<br>
+
+<img width="1545" height="578" alt="image" src="https://github.com/user-attachments/assets/7fe2b003-7936-46e5-b724-8e08bd82c18a" />
+- 자주 묻는 질문  
   보조금 및 전기차에 대해 자주 묻는 질문을 한 눈에 확인할 수 있도록 구성했습니다.
 
 #### 기대 효과
@@ -175,6 +184,7 @@ SKN AI Camp 25기 1차 단위프로젝트 2팀의 결과물입니다.
 <img width="1139" height="671" alt="스크린샷 2026-01-19 오전 9 12 11" src="https://github.com/user-attachments/assets/f6d2aac8-5078-4389-9e2b-c80768bfd1a0" />
 전기차 대표 브랜드인 테슬라와 BYD 사이트의 FAQ와<br>
 국산 전기차를 생산하는 기아의 FAQ에서 전기차 관련된 내용을 모아놓은 자료입니다.<br>
+<br>
 <img width="1551" height="800" alt="image" src="https://github.com/user-attachments/assets/dd903599-4b72-4972-b0c4-ed7de38b65b7" /><br>
 <img width="1561" height="508" alt="image" src="https://github.com/user-attachments/assets/fc9d8bc9-eb47-4141-b6a0-dcaeb4658688" /><br>
 특정 키워드로 질문을 검색하실 수 있습니다. BYD의 경우, 한글로 키워드 검색을 해도 알맞는 영어 질문을 보실 수 있습니다.
