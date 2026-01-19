@@ -200,6 +200,8 @@ SKN AI Camp 25기 1차 단위프로젝트 2팀의 결과물입니다.
   - Tesla: https://www.tesla.com/ko_KR/support
   - BYD: https://www.reverautomotive.com/en/faq
   - KIA: https://www.kia.com/kr/customer-service/center/faq
+- **보조금 정보** (담당: 최원준)
+  - 출처: [무공해차 통합누리집](https://ev.or.kr/nportal/buySupprt/initSubsidyPaymentCheckAction.do)
  
 <br>
 
@@ -217,3 +219,4 @@ SKN AI Camp 25기 1차 단위프로젝트 2팀의 결과물입니다.
 프로젝트 기간도 짧았고, GitHub 다루는 법, 웹으로 페이지를 구현하는 법, DB 서버에 크롤링한 데이터를 저장하는 방법 등 처음 해보는 작업들이 많았던 것 같습니다. 수업시간에 배웠던 방법을 직접 구현하는 방식이 낯설고 어렵기도 했지만 하나하나 배워나가고 만들어가는 재미가 있었습니다. 또한 적극적으로 소통하면서 열심히 하는 팀원들을 만나서 너무 좋았습니다 :)
 
 ### 최원준
+이론으로만 배운 내용을 직접 적용해보는 값진 시간이었습니다. 데이터 크롤링 부분에서 조금 헤매는 부분이 있었지만 문제를 해결하는 과정에서 한층 더 성장하는 계기가 되었습니다. 팀원분들과의 의사소통도 원활하여 의미있는 프로젝트가 될 수 있었습니다.
