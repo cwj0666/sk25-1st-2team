@@ -19,7 +19,7 @@ SKN AI Camp 25기 1차 단위프로젝트 2팀의 결과물입니다.
 | 팀원 | 권가영 | [@Gayoung03](https://github.com/Gayoung03) | BYD 전기차 FAQ Data 크롤링, 충전소 현황 Web 구현 |
 | 팀원 | 이근혁 | [@kookie2626](https://github.com/kookie2626) | KIA, TESLA 전기차 FAQ Data 크롤링 및 FAQ Web 구현 |
 | 팀원 | 전운열 | [@cudaboy](https://github.com/cudaboy) | 충전소 회사 별 요금 Data 크롤링 및 Web 구현, 발표 |
-| 팀원 | 최원준 | [@아이디](https://github.com/아이디) | 전체 Data URL 검색, 전기차 등록 현황 및 충전소 혼잡도 Data Web 구현 |
+| 팀원 | 최원준 | [@cwj0666](https://github.com/아이디) | 전체 Data URL 검색, 전기차 등록 현황 및 충전소 혼잡도 Data Web 구현 |
 
 ## 3. 프로젝트 기간
 2026.01.16(금) ~ 2026.01.19(월)
@@ -111,6 +111,7 @@ SKN AI Camp 25기 1차 단위프로젝트 2팀의 결과물입니다.
 특정 keyword를 이용하여 업체 정보를 검색하거나, 비회원가/회원가/업체명 순서를 이용하여 정보를 재정렬할 수 있습니다.
 
 ### 충전소 혼잡도
+<img width="1603" height="776" alt="스크린샷 2026-01-19 105809" src="https://github.com/user-attachments/assets/5174fd67-dc5e-433f-b9f9-f910c45505f4" />
 전기차 충전소의 시간대별 이용 부하(혼잡도)를 시각화한 페이지입니다.  
 충전 방식(급속 / 완속)에 따라 하루 24시간 기준 평균 충전량 변화를 확인할 수 있으며,  
 사용자는 이를 통해 혼잡 시간대를 파악하고 효율적인 충전 시간을 선택할 수 있습니다.
@@ -129,7 +130,7 @@ SKN AI Camp 25기 1차 단위프로젝트 2팀의 결과물입니다.
 
 
 ### 전기차 보조금 정보
-
+<img width="1569" height="700" alt="스크린샷 2026-01-19 105819" src="https://github.com/user-attachments/assets/86d6f7d2-9def-4d76-ad01-18c809660292" />
 전국 지자체별 전기차 구매 보조금 현황을 조회할 수 있는 페이지입니다.  
 시도 및 시군구 단위로 구분된 데이터를 제공하여 지역별 보조금 차이를 직관적으로 비교할 수 있도록 구성하였습니다.
 
