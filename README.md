@@ -1,4 +1,4 @@
-# 수요자 맞춤형 전기차 통합 정보 플랫폼
+
 
 ## 1. 프로젝트 소개
 SKN AI Camp 25기 1차 단위프로젝트 2팀의 결과물입니다.
@@ -13,13 +13,13 @@ SKN AI Camp 25기 1차 단위프로젝트 2팀의 결과물입니다.
 - **FAQ:** 전기차와 관련된 자주 묻는 질문과 답변 모음
 
 ## 2. 팀 소개
-| 직책 | 이름 | 역할 |
-|:---:|:---:|:---:|
-| 팀장 | 김홍익 | 전기차 등록 현황 및 추세 Data 전처리, GitHub Repository 관리 |
-| 팀원 | 권가영 | BYD 전기차 FAQ Data 크롤링, 충전소 현황 Web 구현 |
-| 팀원 | 이근혁 | KIA, TESLA 전기차 FAQ Data 크롤링 및 FAQ Web 구현 |
-| 팀원 | 전운열 | 충전소 회사 별 요금 Data 크롤링 및 Web 구현, 발표 |
-| 팀원 | 최원준 | 전체 Data URL 검색, 전기차 등록 현황 및 충전소 혼잡도 Data Web 구현 |
+| 직책 | 이름 | GitHub | 역할 |
+|:---:|:---:|:---:|:---:|
+| 팀장 | 김홍익 | [@skidroww](https://github.com/skidroww) | 전기차 등록 현황 및 추세 Data 전처리, GitHub Repository 관리 |
+| 팀원 | 권가영 | [@Gayoung03](https://github.com/Gayoung03) | BYD 전기차 FAQ Data 크롤링, 충전소 현황 Web 구현 |
+| 팀원 | 이근혁 | [@kookie2626](https://github.com/kookie2626) | KIA, TESLA 전기차 FAQ Data 크롤링 및 FAQ Web 구현 |
+| 팀원 | 전운열 | [@cudaboy](https://github.com/cudaboy) | 충전소 회사 별 요금 Data 크롤링 및 Web 구현, 발표 |
+| 팀원 | 최원준 | [@아이디](https://github.com/아이디) | 전체 Data URL 검색, 전기차 등록 현황 및 충전소 혼잡도 Data Web 구현 |
 
 ## 3. 프로젝트 기간
 2026.01.16(금) ~ 2026.01.19(월)
@@ -70,12 +70,33 @@ SKN AI Camp 25기 1차 단위프로젝트 2팀의 결과물입니다.
 
 ### 전기차 등록 현황
 
+<img width="1675" height="837" alt="image" src="https://github.com/user-attachments/assets/1d8342f2-7114-4307-8aee-cad6c022630d" />
+
+전국 전기차 등록 현황 데이터를 시각적으로 확인할 수 있는 페이지입니다.
+지역별 분포, 차종별 구성, 용도별 현황을 한눈에 파악할 수 있도록 구성하였습니다.
+
+<img width="1656" height="806" alt="image" src="https://github.com/user-attachments/assets/82845760-9604-4a3f-9753-22871977c3e7" />
+
+승용·승합·화물·특수 차량으로 구분하여 차종별 구성 비율을 원형 차트로 표현하였습니다.
+사업용 / 비사업용 전기차 등록 현황을 막대 그래프로 제공하여 활용 목적에 따른 분포를 분석할 수 있습니다.
+
+
+
+
 ### 충전소 현황
 - **전국 전기차 충전소 현황**
 <img src="https://github.com/user-attachments/assets/cad72ce5-855c-4539-99ba-5281d6670d92" width="100%"><br>
 
 한국전력공사와 한국환경공단의 데이터를 결합하여 전국 전기차 충전소의 분포 현황을 지도에 시각화했습니다.<br>
-마커 클러스터(Marker Cluster) 기법을 적용하여 전국 단위 데이터를 한눈에 파악할 수 있도록 했으며, 두 기관의 데이터가 모두 존재하는 곳(파란색)과 한전 데이터만 존재하는 곳(회색)을 마커 색상으로 구분하여 정보를 제공합니다.
+두 기관의 데이터가 모두 존재하는 곳(파란색)과 한전 데이터만 존재하는 곳(회색)을 마커 색상으로 구분하여 정보를 제공합니다.
+
+- **🛠️ 기술적 구현 및 최적화**
+  - <small>**동적 파일 경로 탐색**: 실행 환경이 바뀌어도 코드 수정 없이 작동하도록, `os` 라이브러리를 활용해 CSV 파일을 자동으로 로딩합니다.</small>
+  - <small>**성능 최적화 (Caching)**</small>
+    - <small>`@streamlit.cache_data`: 대용량 데이터프레임 로딩 시간을 줄이기 위해 파일 읽기 결과를 캐싱했습니다.</small>
+    - <small>`@streamlit.cache_resource`: 지도 객체 생성 비용을 절감하기 위해 리소스를 캐싱하여 렌더링 속도를 높였습니다.</small>
+  - <small>**지도 렌더링 오류 해결**: 지도가 반으로 잘리는 문제를 해결하기 위해, `copy.deepcopy()`를 통해 매번 깨끗한 복사본을 생성했습니다.</small>
+  - <small>**시각화 개선 (MarkerCluster)**: 마커가 겹쳐 지저분해지는 문제를 해결하기 위해 `MarkerCluster`를 도입하여 가독성을 높였습니다.</small>
 
 
 ### 충전소 요금
@@ -92,8 +113,11 @@ SKN AI Camp 25기 1차 단위프로젝트 2팀의 결과물입니다.
 ### 충전소 혼잡도
 
 ### FAQ
-<img width="1139" height="671" alt="스크린샷 2026-01-19 오전 9 12 11" src="https://github.com/user-attachments/assets/97c4a201-5b90-4fb4-8d6a-6da1862dc681" />
-전기차 대표 브랜드인 테슬라와 BYD 사이트의 FAQ와 국산 전기차를 생산하는 기아의 FAQ에서 전기차 관련된 내용을 모아놓은 자료입니다.<br>
+<img width="1139" height="671" alt="스크린샷 2026-01-19 오전 9 12 11" src="https://github.com/user-attachments/assets/f6d2aac8-5078-4389-9e2b-c80768bfd1a0" />
+전기차 대표 브랜드인 테슬라와 BYD 사이트의 FAQ와<br>
+국산 전기차를 생산하는 기아의 FAQ에서 전기차 관련된 내용을 모아놓은 자료입니다.<br>
+<img width="1551" height="800" alt="image" src="https://github.com/user-attachments/assets/dd903599-4b72-4972-b0c4-ed7de38b65b7" /><br>
+<img width="1561" height="508" alt="image" src="https://github.com/user-attachments/assets/fc9d8bc9-eb47-4141-b6a0-dcaeb4658688" /><br>
 특정 키워드로 질문을 검색하실 수 있습니다. BYD의 경우, 한글로 키워드 검색을 해도 알맞는 영어 질문을 보실 수 있습니다.
 
 ## 7. 데이터 출처
