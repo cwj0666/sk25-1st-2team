@@ -20,7 +20,7 @@ SKN AI Camp 25기 1차 단위프로젝트 2팀의 결과물입니다.
 |:---:|:---:|:---:|:---:|
 | 팀장 | 김홍익 | [@skidroww](https://github.com/skidroww) | 전기차 등록 현황 및 추세 Data 전처리, GitHub Repository 관리 |
 | 팀원 | 권가영 | [@Gayoung03](https://github.com/Gayoung03) | BYD 전기차 FAQ Data 크롤링, 충전소 현황 Web 구현 |
-| 팀원 | 이근혁 | [@kookie2626](https://github.com/kookie2626) | KIA, TESLA 전기차 FAQ Data 크롤링 및 FAQ Web 구현 |
+| 팀원 | 이근혁 | [@kookie2626](https://github.com/kookie2626) | KIA,BMW,TESLA 전기차 FAQ Data 크롤링 및 FAQ Web 구현 |
 | 팀원 | 전운열 | [@cudaboy](https://github.com/cudaboy) | 충전소 회사 별 요금 Data 크롤링 및 Web 구현, 발표 |
 | 팀원 | 최원준 | [@cwj0666](https://github.com/cwj0666) | 전체 Data URL 검색, 전기차 등록 현황·충전소 혼잡도·보조금 Data Web 구현 |
 
@@ -192,9 +192,9 @@ SKN AI Camp 25기 1차 단위프로젝트 2팀의 결과물입니다.
 <br>
 
 ### 6-6. FAQ
-<img width="1139" height="671" alt="스크린샷 2026-01-19 오전 9 12 11" src="https://github.com/user-attachments/assets/f6d2aac8-5078-4389-9e2b-c80768bfd1a0" />
-전기차 대표 브랜드인 테슬라와 BYD 사이트의 FAQ와<br>
-국산 전기차를 생산하는 기아의 FAQ에서 전기차 관련된 내용을 모아놓은 자료입니다.<br>
+<img width="1108" height="661" alt="스크린샷 2026-01-19 오후 1 29 03" src="https://github.com/user-attachments/assets/ebd5ef38-88ec-4e54-9eea-ac331b9ad061" />
+전기차 관련된 FAQ를 볼 수 있는 페이지입니다.<br>
+전기차를 생산하는 국내 브랜드(기아)와 해외 브랜드(BMW)의 전기차 관련 FAQ 그리고 전기차 대표 브랜드인 테슬라와 BYD 사이트의 FAQ를 볼 수 있습니다.<br>
 <br>
 <img width="1551" height="800" alt="image" src="https://github.com/user-attachments/assets/dd903599-4b72-4972-b0c4-ed7de38b65b7" /><br>
 <img width="1561" height="508" alt="image" src="https://github.com/user-attachments/assets/fc9d8bc9-eb47-4141-b6a0-dcaeb4658688" /><br>
@@ -221,6 +221,7 @@ SKN AI Camp 25기 1차 단위프로젝트 2팀의 결과물입니다.
   - Tesla: https://www.tesla.com/ko_KR/support
   - BYD: https://www.reverautomotive.com/en/faq
   - KIA: https://www.kia.com/kr/customer-service/center/faq
+  - BMW: https://www.bmw.co.kr/kr/s/article-search?language=ko&searchKey=전기&hashtags
 - **보조금 정보** (담당: 최원준)
   - 출처: [무공해차 통합누리집](https://ev.or.kr/nportal/buySupprt/initSubsidyPaymentCheckAction.do)
  
