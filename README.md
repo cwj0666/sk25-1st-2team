@@ -25,9 +25,15 @@ SKN AI Camp 25기 1차 단위프로젝트 2팀의 결과물입니다.
 2026.01.16(금) ~ 2026.01.19(월)
 
 ## 4. 기술 스택
-- **Language:** `Python`
-- **Framework:** `Streamlit`
-- **Libraries:** `Pandas`, `Folium`, `Streamlit-Folium`
+
+- **Language**
+  - ![Python](https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+- **Framework**
+  - ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)
+- **Libraries**
+  - ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+  - ![Folium](https://img.shields.io/badge/Folium-77B829?style=for-the-badge&logo=Leaflet&logoColor=white)
+  - ![Streamlit-Folium](https://img.shields.io/badge/Streamlit--Folium-black?style=for-the-badge&logo=Streamlit&logoColor=white)
 
 ## 5. 실행 방법
 1. **필요한 라이브러리를 설치합니다.**
@@ -80,7 +86,9 @@ SKN AI Camp 25기 1차 단위프로젝트 2팀의 결과물입니다.
 ### 충전소 혼잡도
 
 ### FAQ
-
+전기차 대표 브랜드인 테슬라와 BYD 사이트의 FAQ와<br>
+국산 전기차를 생산하는 기아의 FAQ에서 전기차 관련된 내용을 모아놓은 자료입니다.<br>
+특정 키워드로 질문을 검색하실 수 있습니다. BYD의 경우, 한글로 키워드 검색을 해도 알맞는 영어 질문을 보실 수 있습니다.
 
 ## 7. 데이터 출처
 
