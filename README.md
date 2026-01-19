@@ -78,7 +78,7 @@ SKN AI Camp 25기 1차 단위프로젝트 2팀의 결과물입니다.
 └───utils\
     └───db.py              # 데이터베이스 연결 유틸리티
 ```
-
+<img width="1917" height="961" alt="image" src="https://github.com/user-attachments/assets/446c2e9f-36c6-451a-983c-0eb19949490d" />
 <br>
 
 ### 6-1. 전기차 등록 현황
