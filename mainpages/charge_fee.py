@@ -30,19 +30,19 @@ def load(_conn) -> pd.DataFrame:
         "companyName": "업체명",
         "coPhoneNo": "업체 전화번호",
         "customerType" : "회원가 여부",
-        "averageFee": "평균 충전요금(원)",
+        "averageFee": "평균 충전요금(원 / kWh)",
     })
     df["업체 전화번호"] = df["업체 전화번호"].apply(format_phone)
     df['회원가 여부'] = df['회원가 여부'].replace({
         'M': '회원가',
         'G': '비회원가'
     })
-    df["평균 충전요금(원)"] = pd.to_numeric(df["평균 충전요금(원)"], errors="coerce")
+    df["평균 충전요금(원 / kWh)"] = pd.to_numeric(df["평균 충전요금(원 / kWh)"], errors="coerce")
 
     pivot_df = df.pivot_table(
         index=["업체명", "업체 전화번호"],
         columns="회원가 여부",
-        values="평균 충전요금(원)"
+        values="평균 충전요금(원 / kWh)"
     ).reset_index()
 
     pivot_df.columns.name = None
@@ -66,7 +66,7 @@ def render_charge_fee_page(conn):
     # =======================
     # 가장 저렴한 곳 TOP 10 차트
     # =======================
-    st.subheader("📊 평균 충전요금 가장 저렴한 곳 TOP 10")
+    st.subheader("📊 평균 충전요금 가장 저렴한 곳 TOP 10 (kWh 기준)")
     chart_fee_type = st.radio(
         "요금 종류 선택 (저렴한 순)",
         ["비회원가", "회원가"],
@@ -90,7 +90,7 @@ def render_charge_fee_page(conn):
         .mark_bar()
         .encode(
             x=alt.X("업체명:N", sort="y", axis=alt.Axis(labelAngle=-45, title=None)),
-            y=alt.Y(f"{sort_col}:Q", title=f"평균가(원)"),
+            y=alt.Y(f"{sort_col}:Q", title=f"평균가(원 / kWh)"),
             color=alt.Color("업체명:N", legend=None),
             tooltip=["업체명", alt.Tooltip(f"{sort_col}:Q", format=",.2f")],
         )
@@ -137,7 +137,7 @@ def render_charge_fee_page(conn):
         filtered,
         hide_index=True,
         column_config={
-            member_fee_col: st.column_config.NumberColumn(format="%.2f원"),
-            non_member_fee_col: st.column_config.NumberColumn(format="%.2f원"),
+            member_fee_col: st.column_config.NumberColumn(format="%.1f원 / kWh"),
+            non_member_fee_col: st.column_config.NumberColumn(format="%.1f원 / kWh"),
         }
     )
