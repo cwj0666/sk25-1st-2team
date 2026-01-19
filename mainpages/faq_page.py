@@ -97,9 +97,13 @@ def render_faq_page(conn=None):
     if search_term:
         st.caption(f"'{search_term}' 관련 질문이 {len(display_df)}건 검색되었습니다.")
 
-    # 출력 방식: Tesla는 카테고리별 탭 구성, 나머지는 리스트
-    if brand_option == "Tesla" and not display_df.empty and 'category' in display_df.columns:
-        categories = sorted(display_df['category'].unique().tolist())
+# 출력 방식: KIA와 Tesla는 카테고리별 탭 구성, 나머지는 리스트
+    if brand_option in ["KIA", "Tesla"] and not display_df.empty and 'category' in display_df.columns:
+        # DB에서 수동으로 맞춘 순서를 유지하기 위해 sorted() 대신 
+        # 데이터에 등장하는 순서대로 카테고리 목록을 만듭니다.
+        raw_categories = display_df['category'].unique().tolist()
+        categories = [c for c in raw_categories if c] 
+        
         tab_titles = ["전체"] + categories
         tabs = st.tabs(tab_titles)
         
