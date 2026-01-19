@@ -187,8 +187,6 @@ SKN AI Camp 25기 1차 단위프로젝트 2팀의 결과물입니다.
 - **충전소 이용 부하 시간대 안내** (담당: 최원준)
   - URL: [https://www.data.go.kr/data/15039553/fileData.do#tab-layer-file](https://www.data.go.kr/data/15039553/fileData.do#tab-layer-file)
 
-<br>
-
 ### Web Crawling
 - **전기차 충전 요금 정보** (담당: 전운열)
   - 출처: [무공해차 통합누리집](https://chargeinfo.ksga.org/front/statistics/fee)
