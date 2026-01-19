@@ -73,21 +73,28 @@ SKN AI Camp 25기 1차 단위프로젝트 2팀의 결과물입니다.
 
 
 ### 충전소 현황
+- **전국 전기차 충전소 현황**
+<img src="https://github.com/user-attachments/assets/cad72ce5-855c-4539-99ba-5281d6670d92" width="100%"><br>
+
+한국전력공사와 한국환경공단의 데이터를 결합하여 전국 전기차 충전소의 분포 현황을 지도에 시각화했습니다.<br>
+마커 클러스터(Marker Cluster) 기법을 적용하여 전국 단위 데이터를 한눈에 파악할 수 있도록 했으며, 두 기관의 데이터가 모두 존재하는 곳(파란색)과 한전 데이터만 존재하는 곳(회색)을 마커 색상으로 구분하여 정보를 제공합니다.
+
 
 ### 충전소 요금
 - **평균 충전요금 가장 저렴한 곳 TOP 10**
-<img width="1565" height="550" alt="image" src="https://github.com/user-attachments/assets/ebd2c8d8-c53d-4483-a134-add753249c4c" /><br>
+<img width="1543" height="547" alt="image" src="https://github.com/user-attachments/assets/2b14ebea-d5e2-432e-b717-7d761887acdd" /><br>
 충전소 Brand 별로 평균 충전요금을 정렬하였을 때, 요금이 가장 저렴한 업체 10곳의 가격 정보를 막대 그래프 형태로 구현하였습니다.<br>
 회원가/비회원가로 구분하여 평균 충전요금을 확인할 수 있습니다.
 
 - **업체별 평균 충전요금 목록**
-<img width="1548" height="567" alt="image" src="https://github.com/user-attachments/assets/48b7cfba-a02d-489b-8b8a-c0960d7334e3" /><br>
+<img width="1570" height="575" alt="image" src="https://github.com/user-attachments/assets/08308b9c-3d88-4b7a-84f6-0bfab12326fc" /><br>
 전체 충전소 Brand의 업체명/전화번호/회원가/비회원가를 정리한 표입니다.<br>
 특정 keyword를 이용하여 업체 정보를 검색하거나, 비회원가/회원가/업체명 순서를 이용하여 정보를 재정렬할 수 있습니다.
 
 ### 충전소 혼잡도
 
 ### FAQ
+<img width="1139" height="671" alt="스크린샷 2026-01-19 오전 9 12 11" src="https://github.com/user-attachments/assets/f6d2aac8-5078-4389-9e2b-c80768bfd1a0" />
 전기차 대표 브랜드인 테슬라와 BYD 사이트의 FAQ와<br>
 국산 전기차를 생산하는 기아의 FAQ에서 전기차 관련된 내용을 모아놓은 자료입니다.<br>
 특정 키워드로 질문을 검색하실 수 있습니다. BYD의 경우, 한글로 키워드 검색을 해도 알맞는 영어 질문을 보실 수 있습니다.

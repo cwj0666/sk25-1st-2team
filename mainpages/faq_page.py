@@ -1,10 +1,8 @@
 import streamlit as st
 import pandas as pd
 import re
-# utils 폴더의 db.py에서 get_db 함수를 가져옵니다.
 from utils.db import get_db
 
-# --- 1. 유틸리티 함수 및 설정 ---
 TRANSLATION_MAP = {
     "충전": "charge", "배터리": "battery", "보증": "warranty",
     "타이어": "tire", "유지보수": "maintenance", "소프트웨어": "software",
