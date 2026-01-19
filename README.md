@@ -200,3 +200,16 @@ SKN AI Camp 25기 1차 단위프로젝트 2팀의 결과물입니다.
   - Tesla: https://www.tesla.com/ko_KR/support
   - BYD: https://www.reverautomotive.com/en/faq
   - KIA: https://www.kia.com/kr/customer-service/center/faq
+ 
+<br>
+
+## 8. 소감 및 회고
+### 김홍익
+
+### 권가영
+
+### 이근혁
+
+### 전운열
+
+### 최원준준
